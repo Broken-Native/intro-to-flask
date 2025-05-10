@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if name %}
+        <h2>{{ name }}</h2>
+    {% endif %}
+    <!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        {% endif %}
+    {% endwith %} -->
+
+    <form action="#" method="post">
+        <label for="username">Enter email</label> <br>
+        <input type="text" name="email" id="email" placeholder="Enter username" />
+        
+        <label for="password">Enter password</label> <br>
+        <input type="password" name="password" id="password" placeholder="Enter a password" /> <br>
+
+        <button type="submit">Sign in</button>
+    </form>
+</body>
+</html>
